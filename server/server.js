@@ -1,13 +1,12 @@
 import express from "express";
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 import cors from "cors";
 import { Configuration, OpenAIApi } from "openai";
 
 dotenv.config();
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_AI_KEY,
+  apiKey: process.env.OPENAI_API_KEY,
 });
-
 
 const openai = new OpenAIApi(configuration);
 
@@ -16,15 +15,16 @@ app.use(cors());
 app.use(express.json());
 app.get("/", async (req, res) => {
   res.status(200).send({
-    message: "Hello Form Cicada-AI",
+    message: "Hello Form",
   });
 });
 
 app.post("/", async (req, res) => {
   try {
     const prompt = req.body.prompt;
-    const response = await openai.createCompletion({
-      model: "text-davinci-003",
+    const response = await openai.ChatCompletion.create({
+      
+      engine: "text-davinci-003",
       prompt: `${prompt}`,
       temperature: 0,
       max_tokens: 3000,
@@ -34,7 +34,7 @@ app.post("/", async (req, res) => {
     });
 
     res.status(200).send({
-      bot: response.data.choices[0].text,
+      bot: response.choices[0].text,
     });
   } catch (error) {
     console.log(error);

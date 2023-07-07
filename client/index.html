@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cicada-AI</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div id="chat_container"></div>
-      <form>
-        <textarea
-          name="prompt"
-          id=""
-          cols="1"
-          rows="1"
-          placeholder="Ask some thing to Cicada-ai"
-        ></textarea>
-        <button type="submit">
-          <img src="assets/send.svg" alt="" srcset="" />
-        </button>
-      </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cicada-AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="header">
+        <div class="head">
+          <img src="assets/Subtract.png" alt="" srcset="" />
+          <div>
+            <p class="et">Elastic Team</p>
+            <p class="aio">Open AI-Text Generator</p>
+          </div>
+        </div>
+      <hr>
     </div>
-    <script type="module" src="/script.js"></script>
-  </body>
+
+    <div id="chat_container"></div>
+    <form>
+      <textarea name="prompt" id="" cols="1" rows="1" placeholder="Type your prompt here"></textarea>
+      <button type="submit">
+        <img src="assets/Iconsax.png" alt="" srcset="" />
+      </button>
+    </form>
+  </div>
+  <script type="module" src="/script.js"></script>
+</body>
+
 </html>

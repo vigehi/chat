@@ -1,5 +1,7 @@
-import bot from "./assets/bot.svg";
-import user from "./assets/user.svg";
+// import bot from "./assets/Group 5.png";
+import user from "./assets/et.png";
+import bot from "./assets/ai.png"
+import axios from "axios";
 
 const form = document.querySelector("form");
 const chatContainer = document.querySelector("#chat_container");
@@ -74,7 +76,7 @@ const handleSubmit = async (e) => {
 
   loader(messageDiv);
 
-  const response = await fetch("https://cicada.onrender.com/", {
+  const response = await fetch("http://localhost:5000/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -106,3 +108,18 @@ form.addEventListener("keyup", (e) => {
     handleSubmit(e);
   }
 });
+
+const apiKey = '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';
+const apiUrl = 'https://api.openai.com/v1/usage';
+
+axios.get(apiUrl, {
+  headers: {
+    'Authorization': `Bearer ${apiKey}`
+  }
+})
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });

@@ -4,19 +4,12 @@
 
 > This project is a web application that resembles ChatGPT, You can have Communication with advanced GPT3 model API, and most importantly, you have the ability to ask the AI for help regarding JavaScript, React, or any other programming language, giving it code and translating it to another programming language, and much more.
 
-
-![cicada](https://user-images.githubusercontent.com/101924220/209849281-6c56ee68-c034-4287-8664-170d8f0f4ecf.PNG)
-
 In order to achieve this project I used some resources and technologies listed below :
 ## Built With
 
 - Major languages :  JavaScript, HTML, CSS
 - Technologies used : Github, Git, Gitflow, Vite, openai-api
 - Library, Framework and others : Express, Node.js, nodemon, dotenv, cors
-
-## Live Demo
-
- - Click [Here](https://cicada-ai.vercel.app/) To open the live demo
 
 ### Prerequisites ♻️
 
@@ -30,11 +23,6 @@ In order to achieve this project I used some resources and technologies listed b
 ### Setup 🎰
 In your terminal, run the following steps in order to run this project.
 
-- clone the project
-```sh
-git clone git@github.com:Chrissiku/Open-AI.git
-cd Open-AI
-```
 
 - Frontend
 
@@ -68,14 +56,6 @@ npm run server
 
 Go to yout (localhost)[http://127.0.0.1] and you should start test the app on your local machine
 
-
-## Author
-
-👤 **Chris Siku**
-
-- GitHub: [@githubhandle](https://github.com/Chrissiku)
-- Twitter: [@twitterhandle](https://twitter.com/christian_siku)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/christian-siku/)
 
 ## Aknowledgement
  - All my acknowledments goes to the (JS Mastery)[https://www.jsmastery.pro/] community

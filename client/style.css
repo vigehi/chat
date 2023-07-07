@@ -4,17 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #343541;
+  background: white;
 }
 
 #app {
   width: 100vw;
   height: 100vh;
-  background: #343541;
+  background: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,12 +41,13 @@ body {
 }
 
 .wrapper {
-  width: 100%;
+  width: 50%;
   padding: 15px;
 }
 
 .ai {
-  background: #40414f;
+  background: #F1F1F1;
+  margin-left: 50%;
 }
 
 .chat {
@@ -63,14 +64,14 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 5px;
-  background: #5436da;
+  background: #FF007A;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .ai .profile {
-  background: #10a37f;
+  background: #FF007A;
 }
 
 .profile img {
@@ -100,21 +101,19 @@ form {
   max-width: 1280px;
   margin: 0 auto;
   padding: 10px;
-  background: #40414f;
+  background: white;
   display: flex;
   flex-direction: row;
+  border: 1px solid #E0E0E0;
   gap: 10px;
 }
 
 textarea {
   width: 100%;
-  color: #fff;
   font-size: 18px;
   padding: 10px;
   background: transparent;
   border-radius: 5px;
-  border: none;
-  outline: none;
 }
 
 button {
@@ -127,4 +126,47 @@ button {
 form img {
   width: 30px;
   height: 30px;
+}
+
+.header {
+  width: 100%;
+  padding: 50;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px;
+
+}
+
+hr {
+  margin-top: 10px;
+  color: #E0E0E0;
+  width: 100%;
+}
+
+.et {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #FF007A;
+}
+
+.aio {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000000;
+
+}
+
+.head1{
+  display: flex;
+  flex-direction: row;
 }
